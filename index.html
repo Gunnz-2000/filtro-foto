@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Filtro Aesthetic Gratis - Editor de Fotos para Instagram | TikTok</title>
+    <meta name="description" content="Aplica filtros aesthetic gratis a tus fotos para Instagram, TikTok y redes sociales. Editor de fotos online con filtros vintage, fríos, cálidos y personalizables.">
+    <meta name="keywords" content="filtro aesthetic, filtros instagram, editor fotos online, filtros tiktok, aesthetic filters, filtros vintage, filtros fríos, filtros cálidos">
+    <meta name="author" content="Filtro Aesthetic">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="es">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://filtro-aesthetic.com/">
+    <meta property="og:title" content="Filtro Aesthetic Gratis - Editor de Fotos para Redes Sociales">
+    <meta property="og:description" content="Aplica filtros aesthetic gratis a tus fotos para Instagram, TikTok y redes sociales. Editor online con filtros personalizables.">
+    <meta property="og:image" content="https://filtro-aesthetic.com/og-image.jpg">
+    <meta property="og:site_name" content="Filtro Aesthetic">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://filtro-aesthetic.com/">
+    <meta property="twitter:title" content="Filtro Aesthetic Gratis - Editor de Fotos para Redes Sociales">
+    <meta property="twitter:description" content="Aplica filtros aesthetic gratis a tus fotos para Instagram, TikTok y redes sociales. Editor online con filtros personalizables.">
+    <meta property="twitter:image" content="https://filtro-aesthetic.com/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://filtro-aesthetic.com/">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Filtro Aesthetic",
+        "description": "Aplica filtros aesthetic gratis a tus fotos para Instagram, TikTok y redes sociales",
+        "url": "https://filtro-aesthetic.com/",
+        "applicationCategory": "PhotoEditingApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "Filtro Aesthetic"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">✨ Filtro Aesthetic</h1>
+            <p class="subtitle">Dale estilo aesthetic a tus fotos para redes sociales</p>
+        </header>
+
+        <!-- Image Comparison Section -->
+        <section class="image-comparison-section">
+            <div class="image-section">
+                <h3>Antes</h3>
+                <div class="image-wrapper">
+                    <img id="originalImage" class="preview-image" src="i.jpg" alt="Imagen original">
+                </div>
+            </div>
+
+            <div class="image-section">
+                <h3>Después</h3>
+                <div class="image-wrapper">
+                    <img id="filteredImage" class="preview-image aesthetic-basic" src="i.jpg" alt="Imagen con filtro">
+                </div>
+            </div>
+        </section>
+
+        <!-- Controls Section -->
+        <section class="controls-section">
+            <!-- Quick Filters -->
+            <div class="quick-filters">
+                <h4>Filtros Rápidos</h4>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="aesthetic-basic">Básico</button>
+                    <button class="filter-btn" data-filter="aesthetic-vintage">Vintage</button>
+                    <button class="filter-btn" data-filter="aesthetic-cold">Frío</button>
+                    <button class="filter-btn" data-filter="aesthetic-warm">Cálido</button>
+                    <button class="filter-btn" data-filter="aesthetic-dreamy">Soñador</button>
+                    <button class="filter-btn" data-filter="aesthetic-dark">Oscuro</button>
+                </div>
+            </div>
+
+            <!-- Custom Controls -->
+            <div class="custom-controls">
+                <h4>Personalizar</h4>
+                <div class="controls-grid">
+                        <div class="control-group">
+                            <label for="contrast">Contraste: <span id="contrastValue">1.4</span></label>
+                            <input type="range" id="contrast" min="0.5" max="2" step="0.1" value="1.4">
+                        </div>
+                        <div class="control-group">
+                            <label for="saturate">Saturación: <span id="saturateValue">0.5</span></label>
+                            <input type="range" id="saturate" min="0" max="2" step="0.1" value="0.5">
+                        </div>
+                        <div class="control-group">
+                            <label for="brightness">Brillo: <span id="brightnessValue">0.8</span></label>
+                            <input type="range" id="brightness" min="0.3" max="1.5" step="0.05" value="0.8">
+                        </div>
+                        <div class="control-group">
+                            <label for="sepia">Sepia: <span id="sepiaValue">0.0</span></label>
+                            <input type="range" id="sepia" min="0" max="1" step="0.05" value="0.0">
+                        </div>
+                        <div class="control-group">
+                            <label for="hueRotate">Tono: <span id="hueRotateValue">-20</span>°</label>
+                            <input type="range" id="hueRotate" min="-180" max="180" step="5" value="-20">
+                        </div>
+                        <div class="control-group">
+                            <label for="blur">Desenfoque: <span id="blurValue">0.0</span>px</label>
+                            <input type="range" id="blur" min="0" max="3" step="0.1" value="0.0">
+                        </div>
+                </div>
+                <button class="reset-btn" id="resetBtn">🔄 Resetear</button>
+            </div>
+
+            <!-- Download Button -->
+            <div class="download-section">
+                <button class="download-btn" id="downloadBtn">
+                    <span class="download-icon">⬇️</span>
+                    Descargar con Filtro
+                </button>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon">📸</div>
+                    <h3>Sube tu foto</h3>
+                    <p>Arrastra y suelta tu imagen aquí o haz clic para seleccionar</p>
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                    <button class="upload-btn" id="uploadBtn">
+                        Seleccionar Imagen
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

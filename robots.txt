@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://filtro-aesthetic.com/sitemap.xml
+
+# Optimización para SEO
+Crawl-delay: 1
+
+# Permitir acceso a recursos CSS y JS
+Allow: /styles.css
+Allow: /script.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif

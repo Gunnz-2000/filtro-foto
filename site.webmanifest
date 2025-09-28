@@ -1,0 +1,24 @@
+{
+    "name": "Filtro Aesthetic - Editor de Fotos para Redes Sociales",
+    "short_name": "Filtro Aesthetic",
+    "description": "Aplica filtros aesthetic gratis a tus fotos para Instagram, TikTok y redes sociales",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f0f23",
+    "theme_color": "#6366f1",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["photo", "utilities", "social"],
+    "lang": "es"
+}
