@@ -36,7 +36,7 @@ const filters = {
     },
     'aesthetic-cold': {
         name: 'Frío',
-        filter: 'contrast(1.4) saturate(0.5) brightness(0.8) hue-rotate(-30deg) blur(0.2px)'
+        filter: 'contrast(1.5) saturate(0.3) brightness(0.7) hue-rotate(-40deg) blur(0.3px)'
     },
     'aesthetic-warm': {
         name: 'Cálido',
@@ -135,9 +135,18 @@ function handleFile(file) {
 function displayImages() {
     if (!currentImage) return;
     
+    // Aplicar la nueva imagen
     originalImage.src = currentImage;
     filteredImage.src = currentImage;
     applyCurrentFilter();
+    
+    // Scroll automático hacia arriba para mostrar las imágenes
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, 300);
 }
 
 // Apply filter
